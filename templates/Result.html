@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREDICTED</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/74ec0e84e1.js" crossorigin="anonymous"></script>
+  <!--<style>
+    body{
+        background-color: #0b0c10;
+        color: #66fcf1;
+    }
+    .jumbotron
+    {
+        background-color: #0b0c10;
+        color: #66fcf1;
+    }
+  </style>-->
+  <style>
+    .rating-area{
+  width:100px;
+  padding:10px 0 10px 0;
+  border-radius:5px;
+  display:flex;
+  flex-direction:column;
+}
+.align-center{
+   display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.transition-fast{
+  transition:0.2s ease-out;
+}
+.thumbs-up-circle{
+  width:150px;
+  height:150px;
+  background:#f2cf8a;
+  border-radius:50%;
+  box-shadow:1px 1px 0px rgba(0,0,0,0.2);
+  cursor:pointer;
+  margin-bottom:5px;
+  margin-top:5px;
+}
+.thumbs-up{
+  color:#2196f3;
+  font-size:24px;
+  transform:rotate(0) translate(0);
+}
+.thumbs-up-circle:hover{
+   box-shadow:1px 1px 2px rgba(0,0,0,0.5);
+}
+.thumbs-up-circle:hover .thumbs-up{
+  color:#1976D2;
+  transform:rotate(-5deg) translate(0px, -1px);
+}
+.thumbs-up-circle:active{
+  background:#e0e0e0;
+  box-shadow:1px 1px 0px rgba(0,0,0,0.2);
+}
+.thumbs-up-circle:active .thumbs-up{
+  color:#065bae;
+  transition:0.1s;
+  transform:rotate(-10deg) translate(0px, -2px);
+}
+.thumbs-down{
+  color:#9E9E9E;
+  font-size:50px;
+  transform:rotate(0) translate(0);
+}
+.thumbs-up-circle:hover .thumbs-down{
+  color:#565656;
+  transform:rotate(5deg) translate(0px, 1px);
+}
+.thumbs-up-circle:active .thumbs-down{
+  color:#424242;
+  transition:0.1s;
+  transform:rotate(10deg) translate(0px, 2px);
+}
+
+
+    body{
+        background-color: #0b0c10;
+        color: #66fcf1;
+    }
+    .jumbotron
+    {
+        background-color: #0b0c10;
+        color: #66fcf1;
+    }
+
+    svg {
+  width: 100px;
+  display: block;
+  margin: 40px auto 0;
+}
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+.path.circle {
+  -webkit-animation: dash 0.9s ease-in-out;
+  animation: dash 0.9s ease-in-out;
+}
+.path.line {
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 0.9s 0.35s ease-in-out forwards;
+  animation: dash 0.9s 0.35s ease-in-out forwards;
+}
+.path.check {
+  stroke-dashoffset: -100;
+  -webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;
+  animation: dash-check 0.9s 0.35s ease-in-out forwards;
+}
+p {
+  text-align: center;
+  margin: 20px 0 60px;
+  font-size: 1.25em;
+}
+p.success {
+  color: #73AF55;
+}
+p.error {
+  color: #dd1943;
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+.red{
+  color: #dd1943;
+}
+.green{
+  color: #19dd4d;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+  </style>
+</head>
+<body>
+    <!--<div class="container">
+    <div class="jumbotron text-center">
+        <h3>PREDICTION</h3>
+        
+      </div>
+    </div>
+      <div class="container text-center">
+        <p><b>HEY ITS A</b></p>
+        {% if prediction == 1%}
+          <h2 style="color:red;">FAKE POST</h2>
+          {% elif prediction== 0%}
+          <h2 style ="color:green;">REAL POST</h2>
+          {% elif prediction ==-1%}
+          <h2 style="color:orange">NOT A POST</h2>
+          {% endif %}
+    
+    <a href="..">
+        <input type="submit"class="btn btn-info btn-lg" value="Back">
+    </a>
+      </div>-->
+      {% if prediction == 1%}
+  <div class="red">
+      <div class="container">
+      <div class="jumbotron text-center">
+          <h3 class='red'>PREDICTION</h3>
+          
+        </div>
+      </div>
+      <div class="container text-center">
+        <p><b>HEY IT'S</b></p>
+        
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+          <circle class="path circle" fill="none" stroke="#D06079" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+          <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
+          <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
+        </svg>
+        <p class="error">Fake Post</p>
+    </div>
+    {% elif prediction== 0%}
+    <div class = 'green'>
+    <div class="container">
+      <div class="jumbotron text-center">
+          <h3 class="green">PREDICTION</h3>
+        </div>
+      </div>
+      <div class="container text-center">
+        <p><b>HEY IT'S</b></p>
+        
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+        <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+        <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+    </svg>
+<p class="success">Real Post</p>
+</div>
+</div>
+{% elif prediction==-1 %}
+<p style="color:orange">PREDICTION</p>
+<p><b style="color:orange">HEY IT'S</b></p>
+<section class="rating-area align-center" style="text-align: center;margin-left:47%">
+</div>
+<div class="thumbs-up-circle align-center transition-fast">
+<span class="thumbs-down transition-fast"><i class="icon fa fa-thumbs-down thumb " style="color:orange"></i></span>
+</div>
+</section>
+<p style="color:orange">Not a Post</p>
+
+        {% endif %}
+    <a href="/Pred" class="center">
+        <input type="submit"class="btn btn-info btn-lg" value="Back">
+    </a>
+
+</html>
+      </body>
+
+</html>
